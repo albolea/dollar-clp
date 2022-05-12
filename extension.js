@@ -77,14 +77,14 @@ function load_json_async(){
 
     let message = Soup.form_request_new_from_hash(
         'GET', 
-        "https://economia.awesomeapi.com.br/last/USD-PKR", 
+        "https://economia.awesomeapi.com.br/last/USD-CLP", 
         {});
     
     _httpSession.queue_message(message, () => {
         try {
             if (!message.response_body.data) {
                 panelButtonText = new St.Label({
-                    text : "(1 USD = " + _dollarQuotation + " PKR)",
+                    text : "(1 USD = " + _dollarQuotation + " CLP)",
                     y_align: Clutter.ActorAlign.CENTER,
                 });
                 panelButton.set_child(panelButtonText);
@@ -93,12 +93,12 @@ function load_json_async(){
             }
 
             let jp = JSON.parse(message.response_body.data);
-            _dollarQuotation = jp["USDPKR"]["bid"];
+            _dollarQuotation = jp["USDCLP"]["bid"];
             _dollarQuotation = _dollarQuotation.split(".");
             _dollarQuotation = _dollarQuotation[0] + "," + _dollarQuotation[1].substring(0,2);
    
             panelButtonText = new St.Label({
-                text : "(1 USD = " + _dollarQuotation + " PKR)",
+                text : "(1 USD = " + _dollarQuotation + " CLP)",
                 y_align: Clutter.ActorAlign.CENTER,
             });
 
@@ -108,7 +108,7 @@ function load_json_async(){
 
         } catch (e) {
             panelButtonText = new St.Label({
-                text : "(1 USD = " + _dollarQuotation + " PKR)",
+                text : "(1 USD = " + _dollarQuotation + " CLP)",
                 y_align: Clutter.ActorAlign.CENTER,
             });
 
