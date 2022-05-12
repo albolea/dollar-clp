@@ -33,12 +33,12 @@ let sourceId = null;
 
 // Start application
 function init(){
-    log(`initializing ${Me.metadata.name}`);
+   // log(`initializing ${Me.metadata.name}`);
 }
 
 // Add the button to the panel
 function enable() {
-    log(`enabling ${Me.metadata.name}`);
+  //  log(`enabling ${Me.metadata.name}`);
     panelButton = new St.Bin({
         style_class : "panel-button",
     });
@@ -53,8 +53,11 @@ function enable() {
 
 // Remove the added button from panel
 function disable(){
-    log(`disabling ${Me.metadata.name}`);
+   // log(`disabling ${Me.metadata.name}`);
     Main.panel._centerBox.remove_child(panelButton);
+    panelButtonText = null;
+    _httpSession = null;
+    _dollarQuotation = null;
     
     if (panelButton) {
         panelButton.destroy();
