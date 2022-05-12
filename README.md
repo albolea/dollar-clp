@@ -1,6 +1,6 @@
-# Dollar-PKR
+# Dollar-CLP
 ```
-Extension to Gnome-Shell v.(36,38,40,41,42), for conversion of Dollar (USD) to Rs (PKR).
+Extension to Gnome-Shell v.(36,38,40,41,42), for conversion of Dollar (USD) to Peso Chileno (CLP).
 
 # Licence
 ```
@@ -18,8 +18,8 @@ SPDX-License-Identifier: GPL-2.0-or-later
 ```
 # How to install
 ```
-cd /tmp && git clone https://github.com/shoaibzs/dollar-pkr.git && mv dollar-pkr dollar-pkr@shoaibzs.github.com && cp -av dollar-pkr@shoaibzs.github.com ~/.local/share/gnome-shell/extensions/ && gnome-shell-extension-tool --enable-extension dollar-pkr@shoaibzs.github.com && rm -rf dollar-pkr@shoaibzs.github.com .
-Or just download dollar-pkr@shoaibzs.github.com.zip form releases and unzip dollar-pkr@shoaibzs.github.com to ~/.local/share/gnome-shell/extensions/ .
+cd /tmp && git clone https://github.com/albolea/dollar-clp.git && mv dollar-clp dollar-clp@albolea.github.com && cp -av dollar-clpr@albolea.github.com ~/.local/share/gnome-shell/extensions/ && gnome-shell-extension-tool --enable-extension dollar-clp@albolea.github.com && rm -rf dollar-clp@albolea.github.com .
+Or just download dollar-clp@albolea.github.com.zip form releases and unzip dollar-clp@albolea.github.com to ~/.local/share/gnome-shell/extensions/ .
 ```
 To restart GNOME Shell in X11, pressing Alt+F2 to open the Run Dialog and enter restart 
 (or just r). 
