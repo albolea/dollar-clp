@@ -1,8 +1,8 @@
 {
-  "uuid": "dollar-pkr@shoaibzs.github.com",
-  "name": "Dollar-PKR",
-  "description": "(USD US Dollar) converted to (PKR Pakistan Rs). Updates are received every 30 seconds and are based on information provided by AwesomeAPI API, which can be consulted directly by accessing the address https://docs.awesomeapi.com.br. (based on michael.mattos's Dollar https://extensions.gnome.org/extension/4573/dollar/)",
+  "uuid": "dollar-clp@albolea.github.com",
+  "name": "Dollar-CLP",
+  "description": "(USD US Dollar) converted to (CLP Peso Chileno). Updates are received every 30 seconds and are based on information provided by AwesomeAPI API, which can be consulted directly by accessing the address https://docs.awesomeapi.com.br. (based on michael.mattos's Dollar https://extensions.gnome.org/extension/4573/dollar/)",
   "version": 2.2,
   "shell-version": ["3.38", "40", "41", "42"],
-  "url": "https://github.com/shoaibzs/dollar-pkr"
+  "url": "https://github.com/albolea/dollar-pkr"
 }
