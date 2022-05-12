@@ -17,7 +17,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 SPDX-License-Identifier: GPL-2.0-or-later
 ```
 # How to install
-```
+
 cd /tmp && git clone https://github.com/albolea/dollar-clp.git && mv dollar-clp dollar-clp@albolea.github.com && cp -av dollar-clpr@albolea.github.com ~/.local/share/gnome-shell/extensions/ && gnome-shell-extension-tool --enable-extension dollar-clp@albolea.github.com && rm -rf dollar-clp@albolea.github.com .
 Or just download dollar-clp@albolea.github.com.zip form releases and unzip dollar-clp@albolea.github.com to ~/.local/share/gnome-shell/extensions/ .
 ```
